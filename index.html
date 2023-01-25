@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0"> <!--Définis la largeur de l'écran de l'appareil sur lequel elle est affichée-->
+
+    <Title>Booki</Title>
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/tablette.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/4af4c9fb23.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Tête de page-->
+    <header>
+        <nav class="nav-header">
+            <!--Logo Booki-->
+            <img src="Images/logo.png" alt="Logo Bookie" id="logo">
+            <div> 
+                <!--Menu lien-->
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulaire">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1> <!--Titre principal de la page-->
+                <p>En plein centre-ville ou en pleine nature</p>
+
+                <!--Formulaire de recherche-->
+                <form method="get">
+                    <label>  
+                        <i class="fa-solid fa-location-dot"></i>
+                    </label>
+                    <input type="search" id="barre-recherche" name="q" placeholder="Marseille, France">
+                    <button id="desktop-search">Rechercher</button>
+                    <button id="mobile-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+        </section>
+
+        <!--Filtres par catégories-->
+        <section id="filtre">
+            <h2 id="titre-filtre">Filtres</h2> <!--Titre secondaire de la page-->
+            
+                <!--Boutons filtres catégories-->
+            <a class="filtre" href="#">
+                <i class="fa-solid fa-money-bill-wave"></i>Économique
+            </a>
+            <a class="filtre" href="#">
+                <i class="fa-solid fa-person"></i>Familial
+            </a>
+            <a class="filtre" href="#">
+                <i class="fa-solid fa-heart"></i>Romantique
+            </a>
+            <a class="filtre" href="#">
+                <i class="fa-solid fa-dog"></i>Animaux autorisés
+            </a>
+        </section>
+
+            <!--info-->
+            <div class="info">
+                <i class="fa-solid fa-info" id="icone-info"></i> 
+                <p>Plus de 500 logements sont disponibles dans cette ville </p>
+            </div>
+            
+        <!--Bloc hébergements-->
+        <section id="sect-card">
+
+            <!-- Carte 'Hébergements à Marseille'-->
+            <section id="sect-hebergement"> 
+
+                <!--Titre principal-->               
+                <h1>Hébergements à Marseille</h1> 
+
+                <div class="card-hebergement">
+
+                    <!-- Carte 1 -->
+                    <a href="#">
+                        <img src="Images/card-1.jpg" alt="Auberge La Canebière">
+                        <div class="texte-hebergement">
+                            <h3>Auberge La Canebière</h3><!-- Titre Tertiaire -->
+                            <p>Nuit à partir de 25<strong>€</strong></p>
+                            <div class="etoile-1">
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-gris"></i>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Carte 2 -->
+                    <a href="#">
+                        <img src="Images/card-2.jpg" alt="Hôtel du port">
+                        <div class="texte-hebergement">
+                            <h3>Hôtel du port</h3><!-- Titre Tertiaire -->
+                            <p>Nuit à partir de 52<strong>€</strong></p>
+                            <div class="etoile-1">
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-gris"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Carte 3 -->
+                    <a href="#">
+                        <img src="Images/card-3.jpg" alt="Hôtel Les mouettes">
+                        <div class="texte-hebergement">
+                            <h3>Hôtel Les mouettes</h3><!-- Titre Tertiaire -->
+                            <p>Nuit à partir de 76<strong>€</strong></p>
+                            <div class="etoile-1">
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-gris"></i>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Carte 4 -->
+                    <a href="#">
+                        <img src="Images/card-4.jpg" alt="Hôtel de la mer">
+                        <div class="texte-hebergement">
+                            <h3>Hôtel de la mer</h3><!-- Titre Tertiaire -->
+                            <p>Nuit à partir de 46<strong>€</strong></p>
+                            <div class="etoile-1">
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-gris"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Carte 5 -->
+                    <a href="#">
+                        <img src="Images/card-5.jpg" alt="Auberge Le Panier">
+                        <div class="texte-hebergement">
+                            <h3>Auberge Le Panier</h3><!-- Titre Tertiaire -->
+                            <p>Nuit à partir de 23<strong>€</strong></p>
+                            <div class="etoile-1">
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-gris"></i>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Carte 6 -->
+                    <a href="#">
+                        <img src="Images/card-6.jpg" alt="Hôtel Chez Amina"> 
+                        <div class="texte-hebergement">
+                            <h3>Hôtel Chez Amina</h3><!-- Titre Tertiaire -->
+                            <p>Nuit à partir de 96<strong>€</strong></p>
+                            <div class="etoile-1">
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-bleu"></i>
+                                <i class="fa-solid fa-star etoile-gris"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Titre secondaire -->
+                <a href="#" id="afficher-plus">Afficher plus</a> 
+            </section>
+
+    </main>
+
+    <!--Pied de page-->
+    <footer>
+        <div class="div-foot">
+            <h2>À propos</h2>
+            <nav class="nav-footer">
+                <a class="lien-footer" href="">Fonctionnement du site</a>
+                <a class="lien-footer" href="">Conditions générales</a>
+                <a class="lien-footer" href="">Données et confidentialités</a>
+            </nav>
+        </div>
+            
+        <div class="div-foot">
+            <h2>Nos hébergements</h2>
+            <nav class="nav-footer">
+                <a class="lien-footer" href="">Charte qualité</a>
+                <a class="lien-footer" href="">Proposer votre hôtel</a>
+            </nav>
+        </div>
+
+        <div class="div-foot">
+            <h2>Assistance</h2>
+            <nav class="nav-footer">
+                <a class="lien-footer" href="">Centre d'aide</a>
+                <a class="lien-footer" href="">Nous contacter</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
