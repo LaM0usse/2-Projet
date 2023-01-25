@@ -1,0 +1,236 @@
+/*CSS pour la mise en page générale*/
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+body{
+    margin: 48px;
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none; /*enlève le soulignement des liens*/
+    color: black; /*texte en noir*/
+}
+
+
+/*taille police*/
+
+h1{ /*titre principal*/
+    font-size: 22px;
+}
+
+h2{ /*titre secondaire*/
+    font-size: 18px;
+}
+
+h3{ /*titre tertiaire*/
+    font-size: 16px;
+}
+
+#sect-card p{
+    font-size: 14px;
+}
+
+
+/*0-Mise en page du header*/
+
+nav{
+    display: flex;  /*défini l'affichage*/
+    justify-content: space-between;  /*défini l'écartement entre les différents composants*/
+}
+
+#logo {
+    width: 60px; /*défini la taille du logo*/
+}  
+
+.nav-header a{
+    color:black;
+    margin-left: 67px;
+}
+
+.nav-header a:hover {
+    color: #0065fc; /*texte en bleu au survol de la souris*/
+    border-top: 3px solid #0065fc; /*ligne bleu au survol de la souris*/
+    padding-top: 46px;
+}
+
+
+/*1-Formulaire de recherche*/
+
+#formulaire h1{
+    margin-top: 55px;
+    margin-bottom: 8px;
+}
+
+form{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label{ /*icone localisation*/
+    font-size: large; /*taille icône*/
+    background-color: #f2f2f2; /*couleur du fond*/
+    padding: 15px 20px;
+    border-radius: 15px 0px 0px 15px; /*arrondis les bords de l'encadrement*/
+}
+
+#barre-recherche{ /*barre de recherche*/
+    padding: 15px;
+    width: 250px; /*défini la largeur*/
+    border: 2px solid #f2f2f2; /*bordure de 2px couleur gris*/
+}
+
+::placeholder { /*exemple : Marseille, France*/
+    color: black;
+    font-weight: 700;
+    font-size:large;
+}
+
+button { /*bouton rechercher*/
+    color: white;    
+    font-size: large;
+    font-weight: 700;
+    background-color: #0065fc;
+    border: 2px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    padding: 0px 20px;
+}
+
+#mobile-search {
+    display: none; /*Pour faire disparaître le bouton "loupe" de la version mobile*/
+}
+
+/*2-Boutons filtre*/
+
+#filtre{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#titre-filtre{
+    margin-top: 30px;
+}
+
+.filtre{ /*les 4 boutons*/
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: black;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+.filtre i{ /*icônes des boutons*/
+    font-size: 22px;
+    color: #0065fc;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.filtre:hover{ /*au survol des boutons*/
+    background-color:#deebff;
+}
+
+/*Information 'i'*/
+#icone-info{
+    font-size: 10px;
+    color: #0065fc;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 6px 9px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+
+/*3-Cartes 'Hébergements'*/
+
+#sect-card{ /*Regroupement des sections 'hebergement' et 'populaire'*/
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#sect-hebergement{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 63%;
+}
+
+#sect-hebergement h1{ /*titre 'Hébergements à Marseille'*/
+    padding: 45px 0px 25px 40px;
+}
+
+#afficher-plus { /*titre 'Afficher plus'*/
+    padding: 15px 0px 60px 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-hebergement{ /*cartes*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.card-hebergement a{
+    width: 30%;
+    background-color:white;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.19); /*ombre des cartes*/
+}
+
+.card-hebergement a img{ /*images des cartes*/
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.texte-hebergement{ /*partie texte des cartes*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px 0px 10px 10px;
+}
+
+
+/*6-Pied de page*/
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 50px 0px 50px 0px;
+    margin-bottom: -50px;
+}
+
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.lien-footer{
+    justify-content: flex-start ;
+    margin-top: 10px;
+}
