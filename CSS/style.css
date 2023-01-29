@@ -6,7 +6,7 @@
 }
 
 body{
-    margin: 48px;
+    margin: 50px;
     max-width: 1400px;
 }
 
@@ -54,7 +54,7 @@ nav{
 .nav-header a:hover {
     color: #0065fc; /*texte en bleu au survol de la souris*/
     border-top: 3px solid #0065fc; /*ligne bleu au survol de la souris*/
-    padding-top: 46px;
+    padding-top: 48px;
 }
 
 
@@ -161,20 +161,21 @@ button { /*bouton rechercher*/
 #sect-card{ /*Regroupement des sections 'hebergement' et 'populaire'*/
     display: inline-flex;
     justify-content: space-between;
+     gap: 40px;
 }
 
 #sect-hebergement{
     background-color: #f2f2f2;
     border-radius: 20px;
     width: 63%;
+    padding: 42px 40px 46px 40px;
 }
 
 #sect-hebergement h1{ /*titre 'Hébergements à Marseille'*/
-    padding: 45px 0px 25px 40px;
+    padding-bottom: 23px;
 }
 
 #afficher-plus { /*titre 'Afficher plus'*/
-    padding: 15px 0px 60px 40px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -184,9 +185,7 @@ button { /*bouton rechercher*/
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 30px;
-    margin-left: 40px;
     margin-bottom: 40px;
-    margin-right: 40px;
 }
 
 .card-hebergement a{
@@ -195,6 +194,11 @@ button { /*bouton rechercher*/
     border: 5px solid white;
     border-radius: 20px;
     box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.19); /*ombre des cartes*/
+}
+
+.card-hebergement a:hover{ /*effet d'agrandissement au survol de la souris*/
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .card-hebergement a img{ /*images des cartes*/
@@ -209,7 +213,118 @@ button { /*bouton rechercher*/
     flex-direction: column;
     justify-content: space-between;
     height: 70px;
-    padding: 10px 0px 10px 10px;
+    padding: 4px 4px 6px 14px;
+}
+
+
+/*4-Cartes 'Les plus populaires'*/
+
+#sect-populaire{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 34%;
+}
+
+#titre-populaire{ /*titre 'Les plus populaires'*/
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 40px 23px 37px;
+}
+
+.icone-populaire{ /*icone du titre*/
+    color: #0065fc;
+    font-size: 22px;
+}
+
+.card-populaire{ /*cartes*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 33px;
+    margin: 0px 40px 34px 37px;
+}
+
+.card-populaire a{
+    display: inline-flex;
+    width: 100%;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.19); /*ombre des cartes*/
+}
+
+.card-populaire a:hover{ /*effet d'agrandissement au survol de la souris*/
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card-populaire img{ /*images des cartes*/
+    width: 35%;
+    height: 144px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.texte-populaire{ /*partie texte des cartes*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 2px 5px 10px;
+    max-height: 120px;
+}
+
+.etoile-2 {
+    padding-top: 25px;
+}
+
+/*Etoile de notation des cartes*/
+.etoile-bleu{color: #0065fc;}
+
+.etoile-gris{color: #d9d9d9;}
+
+.etoile-gris,  .etoile-bleu{
+    font-size: 12px;
+    width: 8px;
+    padding-right: 2px;
+}
+
+
+/*5-Cartes 'Activités à Marseille'*/
+
+#sect-activite {
+    padding: 60px 0px 60px 0px;
+}
+#sect-activite h1{
+    margin-bottom: 30px;
+}
+.card-activite{
+    display: flex;
+    gap: 43px;
+}
+
+.card-activite article{
+    width: 100%;
+}
+
+.card-activite article:hover{ /*effet d'agrandissement au survol de la souris*/
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card-activite img{
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-activite h3{
+    padding: 19px 0px 21px 19px;
+}
+
+.card-activite article{
+    box-shadow: 1px 1px 1px 1px  rgba(0,0,0,0.19);   /*c'est de la meeeeeerde les shadow*/
+    border-radius: 20px 20px 20px 20px;
 }
 
 
@@ -219,7 +334,7 @@ footer{
     display:flex;
     justify-content: space-around;
     background-color: #f2f2f2;
-    padding: 50px 0px 50px 0px;
+    padding: 45px 0px 45px 0px;
     margin-bottom: -50px;
 }
 
