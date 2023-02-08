@@ -1,0 +1,403 @@
+/*CSS pour la mise en page générale*/
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: auto;
+    padding: 50px;
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none;
+    /*enlève le soulignement des liens*/
+    color: black;
+    /*texte en noir*/
+}
+
+
+/*taille police*/
+
+h1 {
+    /*titre principal*/
+    font-size: 22px;
+}
+
+h2 {
+    /*titre secondaire*/
+    font-size: 18px;
+}
+
+h3 {
+    /*titre tertiaire*/
+    font-size: 16px;
+}
+
+#sect-card p {
+    font-size: 14px;
+}
+
+
+/*0-Mise en page du header*/
+
+nav {
+    display: flex;
+    /*défini l'affichage*/
+    justify-content: space-between;
+    /*défini l'écartement entre les différents composants*/
+}
+
+#logo {
+    width: 60px;
+    /*défini la taille du logo*/
+}
+
+.nav-header a {
+    color: black;
+    margin-left: 67px;
+}
+
+.nav-header a:hover {
+    color: #0065fc;
+    /*texte en bleu au survol de la souris*/
+    border-top: 3px solid #0065fc;
+    /*ligne bleu au survol de la souris*/
+    padding-top: 48px;
+}
+
+
+/*1-Formulaire de recherche*/
+
+#formulaire h1 {
+    margin-top: 55px;
+    margin-bottom: 8px;
+}
+
+form {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    /*icone localisation*/
+    font-size: large;
+    /*taille icône*/
+    background-color: #f2f2f2;
+    /*couleur du fond*/
+    padding: 15px 20px;
+    border-radius: 15px 0px 0px 15px;
+    /*arrondis les bords de l'encadrement*/
+}
+
+#barre-recherche {
+    /*barre de recherche*/
+    padding: 15px;
+    width: 250px;
+    /*défini la largeur*/
+    border: 2px solid #f2f2f2;
+    /*bordure de 2px couleur gris*/
+}
+
+::placeholder {
+    /*exemple : Marseille, France*/
+    color: black;
+    font-weight: 700;
+    font-size: large;
+}
+
+button {
+    /*bouton rechercher*/
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    background-color: #0065fc;
+    border: 2px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    padding: 0px 20px;
+}
+
+#mobile-search {
+    display: none;
+    /*Pour faire disparaître le bouton "loupe" de la version mobile*/
+}
+
+/*2-Boutons filtre*/
+
+#filtre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titre-filtre {
+    margin-top: 30px;
+}
+
+.filtre {
+    /*les 4 boutons*/
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: black;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+.filtre i {
+    /*icônes des boutons*/
+    font-size: 22px;
+    color: #0065fc;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.filtre:hover {
+    /*au survol des boutons*/
+    background-color: #deebff;
+}
+
+/*Information 'i'*/
+#icone-info {
+    font-size: 10px;
+    color: #0065fc;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 6px 9px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+
+/*3-Cartes 'Hébergements'*/
+
+#sect-card {
+    /*Regroupement des sections 'hebergement' et 'populaire'*/
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#sect-hebergement {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 63%;
+    padding: 42px 40px 46px 40px;
+}
+
+#sect-hebergement h2 {
+    /*titre 'Hébergements à Marseille'*/
+    padding-bottom: 23px;
+    font-size: 22px;
+}
+
+#afficher-plus {
+    /*titre 'Afficher plus'*/
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-hebergement {
+    /*cartes*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card-hebergement a {
+    width: 30%;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.19);
+    /*ombre des cartes*/
+}
+
+.card-hebergement a:hover {
+    /*effet d'agrandissement au survol de la souris*/
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card-hebergement a img {
+    /*images des cartes*/
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.texte-hebergement {
+    /*partie texte des cartes*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    padding: 4px 4px 6px 14px;
+}
+
+
+/*4-Cartes 'Les plus populaires'*/
+
+#sect-populaire {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 34%;
+}
+
+#titre-populaire {
+    /*titre 'Les plus populaires'*/
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 40px 0px 37px;
+}
+
+#titre-populaire h2 {
+    font-size: 22px;
+}
+
+.icone-populaire {
+    /*icone du titre*/
+    color: #0065fc;
+    font-size: 22px;
+}
+
+.card-populaire {
+    /*cartes*/
+    margin: 0px 40px 34px 37px;
+}
+
+.card-populaire article {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 30px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.19);
+    /*ombre des cartes*/
+}
+
+.card-populaire article:hover {
+    /*effet d'agrandissement au survol de la souris*/
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card-populaire img {
+    /*images des cartes*/
+    width: 39%;
+    min-width: 39%;
+    max-width: 122px;
+    height: 144px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.texte-populaire {
+    /*partie texte des cartes*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5px 5px 10px;
+    max-height: 130px;
+}
+
+.texte-populaire h3 {
+    padding-bottom: 7px;
+}
+
+/*Etoile de notation des cartes*/
+.etoile-bleu {
+    color: #0065fc;
+}
+
+.etoile-gris {
+    color: #d9d9d9;
+}
+
+.etoile-gris,
+.etoile-bleu {
+    font-size: 12px;
+    width: 8px;
+    padding-right: 2px;
+}
+
+
+/*5-Cartes 'Activités à Marseille'*/
+
+#sect-activite {
+    padding: 60px 0px 60px 0px;
+}
+
+#sect-activite h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.card-activite {
+    display: flex;
+    gap: 35px;
+}
+
+.card-activite article {
+    width: 100%;
+}
+
+.card-activite article:hover {
+    /*effet d'agrandissement au survol de la souris*/
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card-activite img {
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-activite h3 {
+    padding: 19px 0px 21px 19px;
+}
+
+.card-activite article {
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.19);
+    /*c'est de la meeeeeerde les shadow*/
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+/*6-Pied de page*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 45px 0px 45px 0px;
+    margin-bottom: -50px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.lien-footer {
+    margin-top: 10px;
+}

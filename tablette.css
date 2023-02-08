@@ -1,0 +1,45 @@
+@media screen and (max-width: 992px) {
+
+    .filtre {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    #sect-card {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #sect-hebergement {
+        width: 90%;
+    }
+
+
+    #sect-populaire {
+        width: 100%;
+    }
+
+    .card-populaire {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        gap: 25px;
+    }
+
+    .card-populaire a {
+        width: 35%;
+    }
+
+    .texte-populaire {
+        margin: 5px 0px 5px 4px;
+        padding: 0px;
+    }
+
+    .card-activite {
+        display: flex;
+        gap: 30px;
+    }
+
+    .card-activite img {
+        max-height: 200px;
+    }
+}

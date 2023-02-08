@@ -1,0 +1,176 @@
+@media screen and (max-width: 768px) {
+    body {
+        margin: auto;
+        padding: 0;
+    }
+
+
+    /*0-Mise en page du header*/
+
+    nav {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .nav-header a {
+        display: inline-flex;
+        justify-content: center;
+        width: 49%;
+        border-bottom: solid 3px #F2F2F2;
+        padding-bottom: 20px;
+        margin: 0px;
+    }
+
+    .nav-header a:hover {
+        color: #0065fc;
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
+        padding-top: 0px;
+    }
+
+    #logo {
+        display: flex;
+        margin-left: 45%;
+        margin-right: 45%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+
+    /*1-Formulaire de recherche*/
+
+    #formulaire {
+        margin: 20px;
+    }
+
+    #desktop-search {
+        display: none;
+    }
+
+    #mobile-search {
+        display: block;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+
+    /*2-Boutons filtre*/
+
+    #filtre {
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    #titre-filtre {
+        width: 100%;
+    }
+
+    .filtre {
+        flex-wrap: nowrap;
+        padding: 10px;
+        width: 40%;
+    }
+
+    .filtre {
+        font-size: 14px;
+    }
+
+    /*Information 'i'*/
+    .info {
+        margin: 40px 0px 40px 20px
+    }
+
+
+    /*3-Cartes 'Les plus populaires'*/
+
+    #sect-card {
+        /*Regroupement des sections 'hebergement' et 'populaire'*/
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    #sect-populaire {
+        border-radius: 0px;
+    }
+
+    .card-populaire {
+        display: block;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .card-populaire article {
+        width: 98%;
+    }
+
+    .texte-populaire {
+        margin: 16px 13px 5px 15px;
+        justify-content: space-between;
+    }
+
+
+    /*4-Cartes 'Hébergements'*/
+
+    #sect-hebergement {
+        width: 100%;
+        border-radius: 0px;
+        background-color: white;
+        padding: 0px;
+    }
+
+    #sect-hebergement h2 {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .card-hebergement {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 0px 20px 50px 20px;
+
+    }
+
+    .card-hebergement a {
+        width: 98%;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.19);
+    }
+
+    .card-hebergement img {
+        width: 300px;
+    }
+
+    #afficher-plus {
+        display: none;
+    }
+
+
+    /*5-Cartes 'Activités à Marseille'*/
+
+    #sect-activite {
+        margin: 30px 20px 50px 20px;
+        padding: 0px;
+    }
+
+    .card-activite {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 24px;
+
+    }
+
+    .card-activite img {
+        width: 100%;
+    }
+
+
+    /*6-Pied de page*/
+
+    footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 40px;
+    }
+
+    .nav-footer {
+        margin: 5px 0px 40px 0px;
+    }
+}
