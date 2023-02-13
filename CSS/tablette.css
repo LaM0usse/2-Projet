@@ -1,5 +1,8 @@
 @media screen and (max-width: 992px) {
 
+    #filtre {
+        flex-wrap: nowrap;
+    }
     .filtre {
         margin-left: 10px;
         font-size: 14px;
